@@ -4,7 +4,6 @@ import Logo from '../../elements/Image';
 import SiteLogo from '../../../assets/images/alex-logo.svg';
 import { Link } from 'react-router-dom';
 import NavBar from './Nav';
-import 'animate.css';
 
 const Header = ({
   className,
@@ -15,8 +14,6 @@ const Header = ({
   const classes = classNames(
     'header',
     'width-1700',
-    'animate__animated animate__fadeInDown',
-    'animate__delay-1s',
     className
   );
 

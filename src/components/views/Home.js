@@ -31,10 +31,12 @@ const Home = ({
             <LayoutDefault>
                 <Section className="width-1500 hero">
                     <div className="hero-content">
-                        <p className="code">Howdy! My name is</p>
-                        <h1>Alexandria Lindsay.<br />I'm a Full-Stack Developer</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fermentum velit non massa mattis, a eleifend augue gravida. Ut lobortis diam a viverra tempus. Fusce luctus tristique felis, vitae venenatis nisi aliquam a.</p>
-                        <a className="custom-btn" href="#">Check Out My Resume!</a>
+                        <p className="code typing">Howdy! My name is</p>
+                        <div className="text-contain">s
+                            <h1 className="animate__animated animate__fadeInUp animate__delay-2s">Alexandria Lindsay.<br />I'm a Full-Stack Developer</h1>
+                            <p className="animate__animated animate__fadeInUp animate__delay-3s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fermentum velit non massa mattis, a eleifend augue gravida. Ut lobortis diam a viverra tempus. Fusce luctus tristique felis, vitae venenatis nisi aliquam a.</p>
+                            <a className="animate__animated animate__fadeInUp animate__delay-3s custom-btn" href="#">Check Out My Resume!</a>
+                        </div>
                     </div>
                     <div className="shapes">
                             <div className="axis">
