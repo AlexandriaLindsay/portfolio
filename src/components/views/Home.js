@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 import Section from '../layout/Section';
 import DoubleCol from '../layout/DoubleCol';
 import "animate.css"
+import Alex from '../../assets/images/alex-leaning-on-a-plane.jpg';
 
 
 document.title ="Alexandria Lindsay — Full-Stack Developer"; 
@@ -227,6 +228,22 @@ const Home = ({
                                 </div>
                             </div>
                         </div>
+                </Section>
+
+                <Section id="about" className="width-1500">
+                    <div className="row">
+                        <div className="column">
+                            <h2>01. ABOUT<span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span></h2>
+                            <p>Lorem ipsum dolorsitamet,consecteturadipiscingelit.Duisfermentumvelitnonmassamattis,aeleifendauguegravida.Utlobortisdiamaviverratempus.Fusceluctustristiquefelis,vitaevenenatisnisialiquama.Phasellussitametmollisquam,acommodoarcu.Crassitametlectusdui.Namnullajusto,fringillaquisantenec,blandit ultricesex.In venenatismagnaleo,nectinciduntliberoornaresed.</p>
+                            <p>Lorem ipsum dolorsitamet,consecteturadipiscingelit.Duisfermentumvelitnonmassamattis,aeleifendauguegravida.Utlobortisdiamaviverratempus.Fusceluctustristiquefelis,vitaevenenatisnisialiquama.Phasellussitametmollisquam,acommodoarcu.Crassitametlectusdui.Namnullajusto,fringillaquisantenec,blandit ultricesex.In venenatismagnaleo,nectinciduntliberoornaresed.</p>
+                        </div>
+                        <div className="column">
+                            <div className="box">
+                                <div className="circle-cluster"><div className="circle"></div><div className="circle"></div><div className="circle"></div></div>
+                                <img src={Alex} alt="Alex Leaning on a Plane" />
+                            </div>
+                        </div>
+                    </div>
                 </Section>
             </LayoutDefault>
             

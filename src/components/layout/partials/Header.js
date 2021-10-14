@@ -14,6 +14,9 @@ const Header = ({
   const classes = classNames(
     'header',
     'width-1700',
+    'animate__animated',
+    'animate__fadeInDown',
+    'animate__delay-3s',
     className
   );
 
