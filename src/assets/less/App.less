@@ -1359,296 +1359,38 @@ header {
 * HOME PAGE
 ***********************************/
 
-#membership {
-    margin-bottom: 0;
-    margin-top: 56px;
-    @media @min992 {
-        margin-top: 121px;
-    }
-    .arrow-graphic {
-        position: absolute;
-        width: 150px;
-        transform: rotate(180deg);
-        right: 0;
-        bottom: -114px;
-        z-index: -1;
-    }
-    .doubleCol {
-        padding: 0;
-        position: relative;
-        padding: 0px;
-        transition: .3s;
-        margin-bottom: 8px;
-        @media @min992 {
-            margin-bottom: 0;
-            padding: 12px;
-        }
-        .membership-content {
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            width: 80%;
-            transform: translate(-50%,-50%);
-            @media @min992 {
-                bottom: -5%;  
-                left: 52%;
-            }
-            p,h2 {
-                color: @lightPink;
-            }
-            p {
-                margin: 0;
-            }
-        }
-    }
-    & > .doubleCol:first-of-type {
-        width: 100%;
-        margin-top: 54px;
-        @media @min992 {
-            margin-top: 0;
-            width: 64%;
-        }
 
-        .doubleCol {
-            @media @min768 {
-                width: 49%;
-                margin-right: 7px;
-            }
-            @media @min992 {
-                width: 49%;
-                margin-right: 0px;
-            }
-        }
-    }
-
-    & > .doubleCol:nth-of-type(2) {
-        width: 100%;
-        @media @min992 {
-            width: 36%;
-        }
-        @media @min1500 {
-            padding-left: 93px;
-            width: 36%;
-        }
-    }
+#about {
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
-.completed-challenges {
-    margin-top: 77px;
-    margin-bottom: 81px;
-    @media @min992 {
-        margin-bottom: 0;
-        margin-top: 95px;
-    }
-    .doubleCol {
-        padding: 0;
-    }
-
-    .doubleCol:nth-of-type(2) {
-        display: none;
-        @media @min992 {
-            display: inline-block;
-        }
-    }
-
-    .doubleCol:first-of-type {
-        p {
-            font-family: @lato;
-            font-size: 18px;
-            margin-bottom: 40px;
-        }
-        padding-left: 0px;
-        padding-right: 0px;
-        @media @min992 {
-            padding-left: 58px;
-            padding-right: 151px;
-        }
-        @media @min1500 {
-            padding-left: 152px;
-            padding-right: 282px;
-        }
-    }
-
-    h1 {
-        font-size: 239px;
-        @media @min992 {
-            font-size: 280px;
-        }
-    }
-    span {
-        font-size: 34px;
-        font-family: @lato;
-        color: @pink;
-        @media @min992 {
-            font-size: 60px;
-        }
-    }
-}
-
-.popular-sessions {
-    margin-bottom: 79px;
-    @media @min992 {
-        margin-bottom: 157px;
-    }
-    & > h2 {
-        margin-bottom: 50px;
-    }
-    .doubleCol:nth-of-type(odd) {
-        padding-left: 0;
-    }
-
-    .doubleCol {
-        h2 {
-            font-size: 36px;
-        }
-    }
-
-    h3 {
-        color: @pink;
-        font-size: 20px;
-        margin-bottom: 20px;
-    }
-
-    .session-block {
-        margin-bottom: 40px;
-    }
-}
-
-.advice {
-    position: relative;
-    margin-top: 0;
-    text-align: right;
-    h1 {
-        position: absolute;
-        top: 190px;
-        left: -158px;
-        transform: rotate(-90deg);
-        @media @min1500 {
-            top: 248px;
-            left: -153px; 
-        }
-    }
-
-    .advice-img {
-        position: relative;
-        width: 100%;
-        margin-bottom: 70px;
-        @media @min992 {
-            margin-bottom: 150px;
-            width: 88%;
-            float: right;
-        }
-        div {
-            text-align: left;
-            background-color: @lightPink;
-            margin-top: 38px;
-            @media @min992 {
-                margin-top: 0;
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                width: 66%;
-                padding: 52px 52px;
-            }
-            @media @min1500 {
-                margin-top: 0;
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                width: 35%;
-                padding: 52px 52px;
-            }
-        }
-
-        img {
-            width: 100%;
-        }
-    }  
-}
-
-footer {
-    clear: both;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 69px 20px;
-    width: 100%;
-    @media @min992 {
-        padding: 142px 20px;
-    }
-
-    .nav-main {
-        float: none;
-        margin-top: 30px;
-        .center();
-        width: 100%;
-        display: block;
-        @media @min992 {
-            float: right;
-            margin-top: 0;
-            width: 36%;
-        }
-    }
-
-    .nav-main ul li {
-        margin-left: 0;
-        display: block;
-        @media @min992 {
-            display: inline-block;
-            margin-left: 28px;
-        }
-        a {
-            color: @lightPink;
-        }
-    }
-}
-/**********************************
-* CONTACT PAGE
-***********************************/
-.contact {
-    margin-top: 60px;
-    @media @min992 {
-        margin-top: 180px;
-    }
-    .doubleCol:first-of-type {
-        padding-right: 0px;
-        margin-bottom: 70px;
-        @media @min992 {
-            margin-bottom: 0;
-            padding-right: 200px;
-        }
-        h3 {
-            color: @pink;
-        }
-    }
-}
-
-form {
-    p {
-        margin-bottom: 16px;
-    }
-
-    input,textarea,select {
-        background: transparent;
-        border: 4px solid @pink;
-        padding: 10px;
-    }
-
-    input[type="submit"] {
-        .custom-btn();
-        margin-top: 20px;
-        color: @pink !important;
-        width: 150px !important;
-        margin-left: 0;
-        &:hover {
-            color: @lightPink!important;
-        }
-    }
-}
 
 /**********************************
 * FOOTER
 ***********************************/
+form {
+  p {
+      margin-bottom: 16px;
+  }
+
+  input,textarea,select {
+      background: transparent;
+      border: 4px solid @pink;
+      padding: 10px;
+  }
+
+  input[type="submit"] {
+      .custom-btn();
+      margin-top: 20px;
+      color: @pink !important;
+      width: 150px !important;
+      margin-left: 0;
+      &:hover {
+          color: @lightPink!important;
+      }
+  }
+}
 
 footer {
    
