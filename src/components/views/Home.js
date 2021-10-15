@@ -258,7 +258,7 @@ const Home = ({
                     <h2>01. EXPERIENCE<span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span></h2>
                     <div className="row">
                         <div className="column">
-                            <button className={ isActive ? 'active' : '' } id="psone" onClick={togglePsoneClass}><h3>Print Studio One</h3><p>Steinbach, MB</p></button>
+                            <button id="psone" onClick={togglePsoneClass}><h3>Print Studio One</h3><p>Steinbach, MB</p></button>
                             <div className="psone-content">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fermentum velit non massa mattis, a eleifend augue gravida. Ut lobortis diam a viverra tempus. Fusce luctus tristique felis, vitae venenatis nisi aliquam a.</p>
                             </div>

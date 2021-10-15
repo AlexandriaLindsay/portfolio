@@ -1444,6 +1444,18 @@ h2 {
   }
 }
 
+#experience {
+  .psone-content {
+    height: 0;
+    transition: .3s;
+    opacity: 0;
+    &.active {
+      opacity: 1;
+      height: 100%;
+    }
+  }
+}
+
 
 /**********************************
 * FOOTER
