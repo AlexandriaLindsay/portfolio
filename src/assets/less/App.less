@@ -132,7 +132,7 @@
 .column {
   flex: 1 0 auto; 
   width:200px;
-  word-break: break-all;
+  word-break: break-word;
 }
 
 .typing {
@@ -173,6 +173,21 @@
       border-color: #fff;    
   }    
 }    
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+    transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translatey(0px);
+  }
+}
 
 .axis,
 .collection,
@@ -1032,6 +1047,7 @@ h1,h2,h3,h4,h5,h6 {
 h2 {
     font-size: 34px;
     color: @pink;
+    margin-bottom: 64px;
     @media @min992 {
         font-size: 25px;
         letter-spacing: 2px;
@@ -1358,33 +1374,73 @@ header {
 /**********************************
 * HOME PAGE
 ***********************************/
+h2 {
+  span {
+    margin-bottom: 5px;
+    width: 8px;
+    height: 8px;
+    background: @lightPink;
+    border-radius: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 9px;
+    &:first-of-type {
+      margin-left: 20px;
+    }
+  }
+}
 
+.box {
+  position: relative;
+}
+.circle-cluster {
+  position: absolute;
+  top: -81px;
+  right: -85px;
+  z-index: -5;
+  .circle:first-of-type {
+    background-color: #734888;
+    width: 250px;
+    height: 250px;
+    border-radius: 300px;
+    animation: float 6s ease-in-out infinite;
+  }
+  .circle:nth-of-type(2) {
+    background-color: #b983d3;
+    width: 30px;
+    height: 30px;
+    border-radius: 300px;
+    position: absolute;
+    right: 62px;
+    bottom: -60px;
+    animation: float 4s ease-in-out infinite 2s;
+  }
+  .circle:nth-of-type(3) {
+    background-color: @pink;
+    width: 80px;
+    height: 80px;
+    border-radius: 300px;
+    position: absolute;
+    right: -17px;
+    bottom: -20px;
+    animation: float 6s ease-in-out infinite 1s;
+  }
+}
 
 #about {
-  padding-top: 200px;
+  padding-top: 141px;
   padding-bottom: 200px;
+  margin-top: 140px;
 
-  h2 {
-    span {
-      margin-bottom: 5px;
-      width: 8px;
-      height: 8px;
-      background: @lightPink;
-      border-radius: 20px;
-      display: inline-block;
-      vertical-align: middle;
-      margin-left: 9px;
-      &:first-of-type {
-        margin-left: 20px;
-      }
-    }
+  .column:first-of-type {
+    padding-right: 150px;
   }
 
   .box {
     width: 78%;
     border: 5px solid @pink;
     padding: 14px;
-    background: rgba(115, 72, 136, .4);
+    background: rgba(77, 24, 77, .5);
   }
 }
 

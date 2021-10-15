@@ -25,7 +25,15 @@ const Home = ({
     //         setScroll(window.scrollY > target.offsetTop);
     //     });
     // }, []);
-     
+
+    const [isActive, setActive] = useState(false);
+    
+    const togglePsoneClass = () => {
+        const psoneContent = document.querySelector('.psone-content');
+        psoneContent.classList.toggle("active");
+        setActive(!isActive);
+    };
+
      
     return (
         <>
@@ -234,13 +242,25 @@ const Home = ({
                     <div className="row">
                         <div className="column">
                             <h2>01. ABOUT<span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span></h2>
-                            <p>Lorem ipsum dolorsitamet,consecteturadipiscingelit.Duisfermentumvelitnonmassamattis,aeleifendauguegravida.Utlobortisdiamaviverratempus.Fusceluctustristiquefelis,vitaevenenatisnisialiquama.Phasellussitametmollisquam,acommodoarcu.Crassitametlectusdui.Namnullajusto,fringillaquisantenec,blandit ultricesex.In venenatismagnaleo,nectinciduntliberoornaresed.</p>
-                            <p>Lorem ipsum dolorsitamet,consecteturadipiscingelit.Duisfermentumvelitnonmassamattis,aeleifendauguegravida.Utlobortisdiamaviverratempus.Fusceluctustristiquefelis,vitaevenenatisnisialiquama.Phasellussitametmollisquam,acommodoarcu.Crassitametlectusdui.Namnullajusto,fringillaquisantenec,blandit ultricesex.In venenatismagnaleo,nectinciduntliberoornaresed.</p>
+                            <p>Lorem ipsum dolorsitamet,consectetura dipiscingelit. Duisfermentumvelitnonmassamattis,aeleifendauguegravida.Utlobortisdiamaviverratempus.Fusceluctustristiquefelis,vitaevenenatisnisialiquama.Phasellussitametmollisquam,acommodoarcu.Crassitametlectusdui.Namnullajusto,fringillaquisantenec,blandit ultricesex.In venenatismagnaleo,nectinciduntliberoornaresed.</p>
+                            <p>Lorem ipsum dolorsitamet,consecteturad ipiscingelit. Duisfermentumvelitnonmassamattis,aeleifendauguegravida.Utlobortisdiamaviverratempus.Fusceluctustristiquefelis,vitaevenenatisnisialiquama.Phasellussitametmollisquam,acommodoarcu.Crassitametlectusdui.Namnullajusto,fringillaquisantenec,blandit ultricesex.In venenatismagnaleo,nectinciduntliberoornaresed.</p>
                         </div>
                         <div className="column">
                             <div className="box">
                                 <div className="circle-cluster"><div className="circle"></div><div className="circle"></div><div className="circle"></div></div>
                                 <img src={Alex} alt="Alex Leaning on a Plane" />
+                            </div>
+                        </div>
+                    </div>
+                </Section>
+
+                <Section id="experience" className="width-800">
+                    <h2>01. EXPERIENCE<span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span></h2>
+                    <div className="row">
+                        <div className="column">
+                            <button className={ isActive ? 'active' : '' } id="psone" onClick={togglePsoneClass}><h3>Print Studio One</h3><p>Steinbach, MB</p></button>
+                            <div className="psone-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fermentum velit non massa mattis, a eleifend augue gravida. Ut lobortis diam a viverra tempus. Fusce luctus tristique felis, vitae venenatis nisi aliquam a.</p>
                             </div>
                         </div>
                     </div>
