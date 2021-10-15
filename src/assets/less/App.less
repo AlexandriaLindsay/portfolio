@@ -1363,6 +1363,29 @@ header {
 #about {
   padding-top: 200px;
   padding-bottom: 200px;
+
+  h2 {
+    span {
+      margin-bottom: 5px;
+      width: 8px;
+      height: 8px;
+      background: @lightPink;
+      border-radius: 20px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 9px;
+      &:first-of-type {
+        margin-left: 20px;
+      }
+    }
+  }
+
+  .box {
+    width: 78%;
+    border: 5px solid @pink;
+    padding: 14px;
+    background: rgba(115, 72, 136, .4);
+  }
 }
 
 
