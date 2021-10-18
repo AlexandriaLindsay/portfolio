@@ -1057,13 +1057,13 @@ h2 {
 
 
 h3 {
-    font-weight: 500;
-    font-size: 25px;
+    font-weight: 700;
+    font-size: 22px;
     line-height: 1;
     margin-bottom: 0px;
     color: @lightPink;
     @media @min992 {
-        font-size: 36px;
+        font-size: 22px;
     }
    
 }
@@ -1428,7 +1428,7 @@ h2 {
 }
 
 #about {
-  padding-top: 141px;
+  padding-top: 220px;
   padding-bottom: 200px;
   margin-top: 140px;
 
@@ -1445,17 +1445,90 @@ h2 {
 }
 
 #experience {
-  .psone-content {
+  padding-bottom: 200px;
+  height:auto;
+  .psone-content, 
+  .whitecard-content, 
+  .chicken-chef-content {
+    transition: height 0.5s, opacity 0.5s linear;
     height: 0;
-    transition: .3s;
     opacity: 0;
     &.active {
       opacity: 1;
-      height: 100%;
+      height: 200px;
+      transition: height 0.5s, opacity 0.5s linear;
+    }
+  }
+
+  .chicken-chef-content {
+    width: 700px;
+  }
+
+  button {
+    border: 5px solid @pink;
+    width: calc(100% - 2em);
+    transition: .3s;
+    margin-bottom: 30px;
+    text-align: left;
+    padding: 16px 16px;
+    position: relative;
+    &::after {
+      content: '+';
+      font-size: 50px;
+      position: absolute;
+      right: 12px;
+      top: 5px;
+    }
+    &:hover {
+      background-color: @pink;
+      h3,p {
+        color: @blue;
+      }
+      &::after {
+        color: @blue;
+      }
+    }
+    p {
+      margin: 0;
     }
   }
 }
 
+#projects {
+  .project {
+    display: block;
+    border: 5px solid @pink;
+    width: calc(100% - 2em);
+    padding: 28px;
+    margin-bottom: 30px;
+    img {
+      width: 52px;
+      margin-bottom: 12px;
+    }
+    &:hover {
+      background-color: @pink;
+      h3,p {
+        color: @blue;
+      }
+
+      img {
+        filter: drop-shadow(2px 4px 6px @blue);
+      }
+
+      button {
+        border: 5px solid @blue;
+        color: @blue;
+        background-color: @pink;
+        box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+      }
+    }
+
+    button {
+      padding: 9px 0;
+      width: 130px;
+    }
+  }
+}
 
 /**********************************
 * FOOTER

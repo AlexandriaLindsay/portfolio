@@ -8,6 +8,7 @@ import Section from '../layout/Section';
 import DoubleCol from '../layout/DoubleCol';
 import "animate.css"
 import Alex from '../../assets/images/alex-leaning-on-a-plane.jpg';
+import Folder from '../../assets/images/folder.svg';
 
 
 document.title ="Alexandria Lindsay — Full-Stack Developer"; 
@@ -30,7 +31,34 @@ const Home = ({
     
     const togglePsoneClass = () => {
         const psoneContent = document.querySelector('.psone-content');
+        const whitecardContent = document.querySelector('.whitecard-content');
+        const chickenChefContent = document.querySelector('.chicken-chef-content');
+
         psoneContent.classList.toggle("active");
+        whitecardContent.classList.remove("active");
+        chickenChefContent.classList.remove("active");
+        setActive(!isActive);
+    };
+
+    const toggleWhiteCardClass = () => {
+        const psoneContent = document.querySelector('.psone-content');
+        const whitecardContent = document.querySelector('.whitecard-content');
+        const chickenChefContent = document.querySelector('.chicken-chef-content');
+
+        whitecardContent.classList.toggle("active");
+        psoneContent.classList.remove("active");
+        chickenChefContent.classList.remove("active");
+        setActive(!isActive);
+    };
+
+    const toggleChickenChefClass = () => {
+        const psoneContent = document.querySelector('.psone-content');
+        const whitecardContent = document.querySelector('.whitecard-content');
+        const chickenChefContent = document.querySelector('.chicken-chef-content');
+        
+        chickenChefContent.classList.toggle("active");
+        psoneContent.classList.remove("active");
+        whitecardContent.classList.remove("active");
         setActive(!isActive);
     };
 
@@ -41,7 +69,7 @@ const Home = ({
                 <Section className="width-1500 hero">
                     <div className="hero-content">
                         <p className="code typing">Howdy! My name is</p>
-                        <div className="text-contain">s
+                        <div className="text-contain">
                             <h1 className="animate__animated animate__fadeInUp animate__delay-2s">Alexandria Lindsay.<br />I'm a Full-Stack Developer</h1>
                             <p className="animate__animated animate__fadeInUp animate__delay-3s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fermentum velit non massa mattis, a eleifend augue gravida. Ut lobortis diam a viverra tempus. Fusce luctus tristique felis, vitae venenatis nisi aliquam a.</p>
                             <a className="animate__animated animate__fadeInUp animate__delay-3s custom-btn" href="#">Check Out My Resume!</a>
@@ -254,14 +282,102 @@ const Home = ({
                     </div>
                 </Section>
 
-                <Section id="experience" className="width-800">
-                    <h2>01. EXPERIENCE<span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span></h2>
+                <Section id="experience" className="width-1000">
+                    <h2>02. EXPERIENCE<span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span></h2>
                     <div className="row">
                         <div className="column">
                             <button id="psone" onClick={togglePsoneClass}><h3>Print Studio One</h3><p>Steinbach, MB</p></button>
                             <div className="psone-content">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fermentum velit non massa mattis, a eleifend augue gravida. Ut lobortis diam a viverra tempus. Fusce luctus tristique felis, vitae venenatis nisi aliquam a.</p>
                             </div>
+                        </div>
+                        <div className="column">
+                            <button id="whitecard" onClick={toggleWhiteCardClass}><h3>Project White Card</h3><p>Winnipeg, MB</p></button>
+                            <div className="whitecard-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fermentum velit non massa mattis, a eleifend augue gravida. Ut lobortis diam a viverra tempus. Fusce luctus tristique felis, vitae venenatis nisi aliquam a.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="row">
+                    <div className="column">
+                            <button id="chicken-chef" onClick={toggleChickenChefClass}><h3>Chicken Chef</h3><p>Lorette, MB</p></button>
+                            <div className="chicken-chef-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fermentum velit non massa mattis, a eleifend augue gravida. Ut lobortis diam a viverra tempus. Fusce luctus tristique felis, vitae venenatis nisi aliquam a.</p>
+                            </div>
+                        </div>
+                    </div>
+                </Section>
+
+                <Section id="projects" className="width-1500">
+                    <h2>03. KEY PROJECTS<span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span></h2>
+                    <div className="row">
+                        <div className="column">
+                            <a className="project" href="#" target="_blank">
+                                <img src={Folder} alt="Folder Icon" />
+                                <h3>Company Name</h3>
+                                <p>Lorem ipsum dolor sit amet, con sectetur adipiscing elit. Lorem ip sum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolo r sit amet, consectetur.</p>
+                                <button className="custom-btn">View</button>
+                            </a>
+                        </div>
+                        <div className="column">
+                            <a className="project" href="#" target="_blank">
+                                <img src={Folder} alt="Folder Icon" />
+                                <h3>Company Name</h3>
+                                <p>Lorem ipsum dolor sit amet, con sectetur adipiscing elit. Lorem ip sum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolo r sit amet, consectetur.</p>
+                                <button className="custom-btn">View</button>
+                            </a>
+                        </div>
+                        <div className="column">
+                            <a className="project" href="#" target="_blank">
+                                <img src={Folder} alt="Folder Icon" />
+                                <h3>Company Name</h3>
+                                <p>Lorem ipsum dolor sit amet, con sectetur adipiscing elit. Lorem ip sum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolo r sit amet, consectetur.</p>
+                                <button className="custom-btn">View</button>
+                            </a>
+                        </div>
+                        <div className="column">
+                            <a className="project" href="#" target="_blank">
+                                <img src={Folder} alt="Folder Icon" />
+                                <h3>Company Name</h3>
+                                <p>Lorem ipsum dolor sit amet, con sectetur adipiscing elit. Lorem ip sum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolo r sit amet, consectetur.</p>
+                                <button className="custom-btn">View</button>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div className="row">
+                        <div className="column">
+                            <a className="project" href="#" target="_blank">
+                                <img src={Folder} alt="Folder Icon" />
+                                <h3>Company Name</h3>
+                                <p>Lorem ipsum dolor sit amet, con sectetur adipiscing elit. Lorem ip sum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolo r sit amet, consectetur.</p>
+                                <button className="custom-btn">View</button>
+                            </a>
+                        </div>
+                        <div className="column">
+                            <a className="project" href="#" target="_blank">
+                                <img src={Folder} alt="Folder Icon" />
+                                <h3>Company Name</h3>
+                                <p>Lorem ipsum dolor sit amet, con sectetur adipiscing elit. Lorem ip sum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolo r sit amet, consectetur.</p>
+                                <button className="custom-btn">View</button>
+                            </a>
+                        </div>
+                        <div className="column">
+                            <a className="project" href="#" target="_blank">
+                                <img src={Folder} alt="Folder Icon" />
+                                <h3>Company Name</h3>
+                                <p>Lorem ipsum dolor sit amet, con sectetur adipiscing elit. Lorem ip sum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolo r sit amet, consectetur.</p>
+                                <button className="custom-btn">View</button>
+                            </a>
+                        </div>
+                        <div className="column">
+                            <a className="project" href="#" target="_blank">
+                                <img src={Folder} alt="Folder Icon" />
+                                <h3>Company Name</h3>
+                                <p>Lorem ipsum dolor sit amet, con sectetur adipiscing elit. Lorem ip sum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolo r sit amet, consectetur.</p>
+                                <button className="custom-btn">View</button>
+                            </a>
                         </div>
                     </div>
                 </Section>
