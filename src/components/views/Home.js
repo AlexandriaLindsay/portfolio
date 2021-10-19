@@ -270,9 +270,11 @@ const Home = ({
                 </Section>
 
                 <Section id="about" className="width-1500">
+                <h2 className="mobile">01. ABOUT<span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span></h2>
+
                     <div className="row">
                         <div className="column">
-                            <h2>01. ABOUT<span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span></h2>
+                            <h2 className="desktop">01. ABOUT<span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span></h2>
                             <p>Lorem ipsum dolorsitamet,consectetura dipiscingelit. Duisfermentumvelitnonmassamattis,aeleifendauguegravida.Utlobortisdiamaviverratempus.Fusceluctustristiquefelis,vitaevenenatisnisialiquama.Phasellussitametmollisquam,acommodoarcu.Crassitametlectusdui.Namnullajusto,fringillaquisantenec,blandit ultricesex.In venenatismagnaleo,nectinciduntliberoornaresed.</p>
                             <p>Lorem ipsum dolorsitamet,consecteturad ipiscingelit. Duisfermentumvelitnonmassamattis,aeleifendauguegravida.Utlobortisdiamaviverratempus.Fusceluctustristiquefelis,vitaevenenatisnisialiquama.Phasellussitametmollisquam,acommodoarcu.Crassitametlectusdui.Namnullajusto,fringillaquisantenec,blandit ultricesex.In venenatismagnaleo,nectinciduntliberoornaresed.</p>
                         </div>
@@ -317,34 +319,34 @@ const Home = ({
                     <h2>03. KEY PROJECTS<span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span></h2>
                     <div className="row">
                         <div className="column">
-                            <a className="project" href="#" target="_blank">
+                            <a className="project" href="https://lexiesloosetea.ca/" target="_blank" rel="noreferrer noopener">
                                 <img src={Folder} alt="Folder Icon" />
-                                <h3>Company Name</h3>
-                                <p>Lorem ipsum dolor sit amet, con sectetur adipiscing elit. Lorem ip sum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolo r sit amet, consectetur.</p>
+                                <h3>Lexie's Loose Tea</h3>
+                                <p>This project was to kickstart my very own tea business! Designed and developed a custom theme integrated with woocommerce.</p>
                                 <button className="custom-btn">View</button>
                             </a>
                         </div>
                         <div className="column">
-                            <a className="project" href="#" target="_blank">
+                            <a className="project" href="https://echo.staging.prufs.ca/" target="_blank" rel="noreferrer noopener">
                                 <img src={Folder} alt="Folder Icon" />
-                                <h3>Company Name</h3>
-                                <p>Lorem ipsum dolor sit amet, con sectetur adipiscing elit. Lorem ip sum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolo r sit amet, consectetur.</p>
+                                <h3>Spartan Gym &amp; Traing</h3>
+                                <p>This was a side project I designed and built. Using React as the front-end and WordPress as a headless CMS. Paried with the Apollo Client and GraphQL API to query data.</p>
                                 <button className="custom-btn">View</button>
                             </a>
                         </div>
                         <div className="column">
-                            <a className="project" href="#" target="_blank">
+                            <a className="project" href="https://prairiesurfaces.ca/court-designer/" target="_blank" rel="noreferrer noopener">
                                 <img src={Folder} alt="Folder Icon" />
-                                <h3>Company Name</h3>
-                                <p>Lorem ipsum dolor sit amet, con sectetur adipiscing elit. Lorem ip sum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolo r sit amet, consectetur.</p>
+                                <h3>Praire Surfaces - Court Builder</h3>
+                                <p>Developed website and a court builder interface that allows the user to create their court and submit the creation through the form. Use PHP to pass relavant data between pages.</p>
                                 <button className="custom-btn">View</button>
                             </a>
                         </div>
                         <div className="column">
-                            <a className="project" href="#" target="_blank">
+                            <a className="project" href="https://psone.ca" target="_blank" rel="noreferrer noopener">
                                 <img src={Folder} alt="Folder Icon" />
-                                <h3>Company Name</h3>
-                                <p>Lorem ipsum dolor sit amet, con sectetur adipiscing elit. Lorem ip sum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolo r sit amet, consectetur.</p>
+                                <h3>Print Studio One</h3>
+                                <p>About a year in working for PSOne, they wanted to refresh their site. This was a big project and I'm happy I got to take lead on the project!</p>
                                 <button className="custom-btn">View</button>
                             </a>
                         </div>
@@ -352,18 +354,18 @@ const Home = ({
                     
                     <div className="row">
                         <div className="column">
-                            <a className="project" href="#" target="_blank">
+                        <a className="project" href="https://fortemicro.com/" target="_blank" rel="noreferrer noopener">
                                 <img src={Folder} alt="Folder Icon" />
-                                <h3>Company Name</h3>
-                                <p>Lorem ipsum dolor sit amet, con sectetur adipiscing elit. Lorem ip sum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolo r sit amet, consectetur.</p>
+                                <h3>Forte Micro</h3>
+                                <p>This client loved our work so much that they reached out all the way from Florida! We built custom templates to allow ability to add sections to there pages.</p>
                                 <button className="custom-btn">View</button>
                             </a>
                         </div>
                         <div className="column">
-                            <a className="project" href="#" target="_blank">
+                        <a className="project" href="https://heatmasterss.com/price-your-furnace-new/" target="_blank" rel="noreferrer noopener">
                                 <img src={Folder} alt="Folder Icon" />
-                                <h3>Company Name</h3>
-                                <p>Lorem ipsum dolor sit amet, con sectetur adipiscing elit. Lorem ip sum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolo r sit amet, consectetur.</p>
+                                <h3>Heatmastersss - Price Your Furnace Form Refresh</h3>
+                                <p>While I didn't develop this site I had the great opportunity to build this awesome ajax/PHP form that contains a heafty amount of conditional logic to determine witch furnaces get display, in which order.</p>
                                 <button className="custom-btn">View</button>
                             </a>
                         </div>

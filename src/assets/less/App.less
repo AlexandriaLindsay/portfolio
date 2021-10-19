@@ -132,8 +132,11 @@
 
 .column {
   flex: 1 0 auto; 
-  width:200px;
+  width: 100%;
   word-break: break-word;
+  @media @min768 {
+    width:200px;
+  }
 }
 
 .typing {
@@ -871,18 +874,23 @@ html {
               a {
                 display: block;
                 position: relative;
-                color: @lightPink;
+                color: @blue;
                 text-decoration: none;
                 overflow: hidden;
-                font-size: 30px;
+                font-size: 20px;
                 text-transform: normal;
                 margin-top: 0px;
                 font-weight: 500;
                 margin-bottom: 0;
                 padding: 0 10px;
-                padding-top: 5px;
+                padding-top: 0px;
                 @media @min768 {
                     font-size: 45px;
+                }
+
+                &::after,
+                &::before {
+                  border-color: @blue;
                 }
               }
             }
@@ -1048,8 +1056,9 @@ h1,h2,h3,h4,h5,h6 {
 h2 {
     font-size: 22px;
     color: @pink;
-    margin-bottom: 64px;
+    margin-bottom: 35px;
     @media @min992 {
+        margin-bottom: 64px;
         font-size: 25px;
         letter-spacing: 2px;
     }
@@ -1059,7 +1068,7 @@ h2 {
 
 h3 {
     font-weight: 700;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 1;
     margin-bottom: 0px;
     color: @lightPink;
@@ -1163,6 +1172,7 @@ button:focus {
     font-family: @lato;
     margin-top: 54px;
     .center();
+    transition: .3s;
     @media @min992 {
       font-size: 18px;
     }
@@ -1228,6 +1238,10 @@ header {
     position: relative;
     z-index: 65;
     @media @min992 {
+        margin-left: 0px;
+        width: auto;  
+    }
+    @media @min1500 {
         margin-left: 79px;
         width: auto;  
     }
@@ -1249,14 +1263,14 @@ header {
     display: none;
     vertical-align: middle;
     width: 36%;
+    text-align: right;
     @media @min992 {
+        margin-right: 38px;
         display: inline-block;
-        width: 55%;
+        width: 70%;
         margin-top: 34px;
     }
-    @media @min1200 {
-        width: 55%;
-    }
+
     @media @min1500 {
         width: 55%;
     }
@@ -1298,7 +1312,7 @@ header {
         animation: opacity 5s forwards;
         animation-delay: 3s;
         display: none;
-        @media @min992 {
+        @media @min1500 {
           display: block;
         }
     }
@@ -1311,6 +1325,10 @@ header {
     .code {
         margin-bottom: 40px;
         color: @pink;
+        font-size: 14px;
+        @media @min992 {
+          font-size: 16px;
+        }
     }
 
     .hero-content div p:last-of-type {
@@ -1362,7 +1380,15 @@ header {
         position: relative;
         padding-top: 41px;
         display: inline-block;
+        @media @min768 {
+          padding-top: 104px;
+          width: 61%;
+        }
         @media @min992 {
+          padding-top: 104px;
+          width: 81%;
+        }
+        @media @min1500 {
           padding-top: 104px;
           width: 57%;
         }
@@ -1398,9 +1424,20 @@ h2 {
     height: 8px;
     background: @lightPink;
     border-radius: 20px;
-    display: inline-block;
     vertical-align: middle;
     margin-left: 9px;
+    display: inline-block;
+
+    &:nth-of-type(5),
+    &:nth-of-type(6),
+    &:nth-of-type(7),
+    &:nth-of-type(8) {
+      display: none;
+      @media @min768 {
+        display: inline-block;
+      }
+    }
+   
     &:first-of-type {
       margin-left: 20px;
     }
@@ -1449,10 +1486,12 @@ h2 {
 }
 
 #about {
-  padding-top: 220px;
-  padding-bottom: 200px;
+  padding-top: 119px;
+  padding-bottom: 60px;
   margin-top: 0px;
   @media @min992 {
+    padding-bottom: 200px;
+    padding-top: 220px;
     margin-top: 140px;
   }
 
@@ -1462,24 +1501,40 @@ h2 {
 
   .column:first-of-type {
     padding-right: 0px;
+    order: 2;
+    margin-top: 24px;
+    @media @min768 {
+      margin-top: 0;
+      padding-right: 43px;
+      order: unset;
+    }
     @media @min992 {
+      padding-right: 105px;
+    }
+    @media @min1500 {
       padding-right: 150px;
     }
   }
 
   .box {
-    width: 78%;
+    width: 100%;
     border: 5px solid @pink;
     padding: 14px;
     background: rgba(77, 24, 77, .5);
+    @media @min992 {
+      width: 78%;
+    }
   }
 }
 
 #experience {
-  padding-bottom: 200px;
+  padding-bottom: 60px;
   padding-top: 57px;
   height:auto;
   position: relative;
+  @media @min992 {
+    padding-bottom: 200px;
+  }
   .psone-content, 
   .whitecard-content, 
   .chicken-chef-content {
@@ -1505,17 +1560,24 @@ h2 {
   }
 
   .chicken-chef-content {
-    width: 700px;
+    width: 100%;
+    @media @min992 {
+      width: 700px;
+    }
   }
 
   button {
     border: 5px solid @pink;
-    width: calc(100% - 2em);
+    width: calc(100% - 0em);
     transition: .3s;
     margin-bottom: 30px;
     text-align: left;
     padding: 16px 16px;
     position: relative;
+    background-color: @blue;
+    @media @min768 {
+      width: calc(100% - 2em);
+    }
     &::after {
       content: '+';
       font-size: 50px;
@@ -1540,12 +1602,27 @@ h2 {
 
 #projects {
   padding-top: 57px;
+  .column {
+    width: 100%;
+    @media @min768 {
+      width: 49%;
+    }
+    @media @min1200 {
+      width: 200px;
+    }
+  }
   .project {
     display: block;
     border: 5px solid @pink;
-    width: calc(100% - 2em);
+    width: calc(100% - 0em);
     padding: 28px;
     margin-bottom: 30px;
+    @media @min768 {
+      width: calc(100% - 1em);
+    }
+    @media @min992 {
+      width: calc(100% - 2em);
+    }
     img {
       width: 52px;
       margin-bottom: 12px;
@@ -1580,9 +1657,12 @@ h2 {
 
 
 #contact {
-  padding-top: 198px;
+  padding-top: 100px;
   padding-bottom: 140px;
   position: relative;
+  @media @min768 {
+    padding-top: 198px;
+  }
   h2 {
     margin-bottom: 23px;
   }
@@ -1610,10 +1690,17 @@ h2 {
     }
   }
   & > p {
-    width: 600px;
+    width: 100%;
+    @media @min768 {
+      width: 600px;
+    }
   }
 
   .social {
+    margin-top: 63px;
+    @media @min768 {
+      margin-top: 0;
+    }
     img {
       margin-right: 20px;
     }
@@ -1624,7 +1711,10 @@ h2 {
     p:first-of-type,
     p:nth-of-type(2) {
       display: inline-block;
-      width: 49%;
+      width: 100%;
+      @media @min768 {
+        width: 49%;
+      }
     }
 
     input,textarea {
@@ -1633,7 +1723,9 @@ h2 {
     }
 
     input[type="submit"] {
-      float: right;
+      @media @min768 {
+        float: right;
+      }
       &:hover {
         background-color: @pink;
         color: @blue !important;
@@ -1641,7 +1733,10 @@ h2 {
     }
 
     p:first-of-type {
-      margin-right: 19px;
+      margin-right: 14px;
+      @media @min1200 {
+        margin-right: 19px;
+      }
     }
   }
 }
