@@ -317,6 +317,7 @@ const Home = ({
 
                 <Section id="projects" className="width-1500">
                     <h2>03. KEY PROJECTS<span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span></h2>
+                    <p>I've chosen to list only a few projects as I've worked on over 100+ sites. Feel free to <a href="#contact">connect</a> with me if you want to hear about more work I've done!</p>
                     <div className="row">
                         <div className="column">
                             <a className="project" href="https://lexiesloosetea.ca/" target="_blank" rel="noreferrer noopener">
@@ -370,18 +371,18 @@ const Home = ({
                             </a>
                         </div>
                         <div className="column">
-                            <a className="project" href="#" target="_blank">
+                            <a className="project" href="https://goldkey21.com/" target="_blank" rel="noreferrer noopener">
                                 <img src={Folder} alt="Folder Icon" />
-                                <h3>Company Name</h3>
-                                <p>Lorem ipsum dolor sit amet, con sectetur adipiscing elit. Lorem ip sum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolo r sit amet, consectetur.</p>
+                                <h3>Century 21</h3>
+                                <p>With the aid of RealtyPress we developed this site while creating cron jobs to instruct the server to pull from the MLS feed every hour.</p>
                                 <button className="custom-btn">View</button>
                             </a>
                         </div>
                         <div className="column">
-                            <a className="project" href="#" target="_blank">
+                            <a className="project" href="https://greattastesmb.ca/" target="_blank" rel="noreferrer noopener">
                                 <img src={Folder} alt="Folder Icon" />
-                                <h3>Company Name</h3>
-                                <p>Lorem ipsum dolor sit amet, con sectetur adipiscing elit. Lorem ip sum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolo r sit amet, consectetur.</p>
+                                <h3>Great Tastes MB</h3>
+                                <p>Aside from developing the website, we imported over 500+ recipes from their old site to their new one.</p>
                                 <button className="custom-btn">View</button>
                             </a>
                         </div>
