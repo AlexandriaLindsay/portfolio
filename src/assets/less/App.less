@@ -516,7 +516,7 @@
 }
 .collection:nth-child(5) {
     transform: translateY(-120px) translateX(120px) translateZ(-120px) scale(2.6);
-    color: black;
+    color: #FFDFD3;
   }
 .code {
     font-family: @code;
@@ -1046,7 +1046,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h2 {
-    font-size: 34px;
+    font-size: 22px;
     color: @pink;
     margin-bottom: 64px;
     @media @min992 {
@@ -1451,7 +1451,10 @@ h2 {
 #about {
   padding-top: 220px;
   padding-bottom: 200px;
-  margin-top: 140px;
+  margin-top: 0px;
+  @media @min992 {
+    margin-top: 140px;
+  }
 
   img {
     width: 100%;
