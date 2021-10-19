@@ -1242,7 +1242,6 @@ header {
         width: auto;  
     }
     @media @min1500 {
-        margin-left: 79px;
         width: auto;  
     }
 
@@ -1493,6 +1492,26 @@ h2 {
     padding-bottom: 200px;
     padding-top: 220px;
     margin-top: 140px;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+  }
+
+  li {
+    display: inline-block;
+    padding-left: 15px;
+    width: 192px;
+    position: relative;
+    &::before {
+      position: absolute;
+      left: -2px;
+      top: -0.5;
+      content: '\2022';
+      color: @pink;
+    }
   }
 
   img {

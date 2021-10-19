@@ -74,7 +74,7 @@ const Home = ({
                         <p className="code typing">Howdy! My name is</p>
                         <div className="text-contain">
                             <h1 className="animate__animated animate__fadeInUp animate__delay-2s">Alexandria Lindsay.<br />I'm a Full-Stack Developer</h1>
-                            <p className="animate__animated animate__fadeInUp animate__delay-3s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fermentum velit non massa mattis, a eleifend augue gravida. Ut lobortis diam a viverra tempus. Fusce luctus tristique felis, vitae venenatis nisi aliquam a.</p>
+                            <p className="animate__animated animate__fadeInUp animate__delay-3s">I specialize in developing (and occasionally designing) experiences for the web. Currently I'm focusing on building top performing web applications.</p>
                             <a className="animate__animated animate__fadeInUp animate__delay-3s custom-btn" href="#">Check Out My Resume!</a>
                         </div>
                     </div>
@@ -275,8 +275,17 @@ const Home = ({
                     <div className="row">
                         <div className="column">
                             <h2 className="desktop">01. ABOUT<span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span></h2>
-                            <p>Lorem ipsum dolorsitamet,consectetura dipiscingelit. Duisfermentumvelitnonmassamattis,aeleifendauguegravida.Utlobortisdiamaviverratempus.Fusceluctustristiquefelis,vitaevenenatisnisialiquama.Phasellussitametmollisquam,acommodoarcu.Crassitametlectusdui.Namnullajusto,fringillaquisantenec,blandit ultricesex.In venenatismagnaleo,nectinciduntliberoornaresed.</p>
-                            <p>Lorem ipsum dolorsitamet,consecteturad ipiscingelit. Duisfermentumvelitnonmassamattis,aeleifendauguegravida.Utlobortisdiamaviverratempus.Fusceluctustristiquefelis,vitaevenenatisnisialiquama.Phasellussitametmollisquam,acommodoarcu.Crassitametlectusdui.Namnullajusto,fringillaquisantenec,blandit ultricesex.In venenatismagnaleo,nectinciduntliberoornaresed.</p>
+                            <p>Hi there! My name is Alexandria and I have a strong passion for creating things that live on the web. My interest in web development started back in 2013 when I found a free course online that was teaching html and css for free. Once I created my first project I was so amazed that I could see my vision come to life. In that moment I knew it was a passion of mine to make people's visions come to life.</p>
+                            <p>A few years later I began to dabble in video game development, app development, etc. Only to discover that I specifically wanted to pursue web development. Fast forward to today, and I've had the privilege to work at an amazing marketing company where I'm currently a lead developer. My main focus most days is building high-end websites and experiences, learning new technologies, and discovering ways to improve our sites, devlopment efficiency &amp; productivity, and the overall web process.</p>
+                            <p>I also have a strong desire to learn new languages and methods that can improve my work. Here are a few I've been working with recently.</p>
+                            <ul>
+                                <li>React</li>
+                                <li>JavaScript (ES6)</li>
+                                <li>GraphQL</li>
+                                <li>Timber &amp; TWIG</li>
+                                <li>WordPress</li>
+                                <li>Drupal</li>
+                            </ul>
                         </div>
                         <div className="column">
                             <div className="box">
