@@ -24,9 +24,9 @@ const Nav = ({
       >
         <ul>
             <li><a className="hover-2" href='/#membership' onClick={() => scroll('about')}>01. ABOUT</a></li>
-            <li><a className="hover-2" href='/#sessions' onClick={() => scroll('experience')}>02. EXPERIENCE</a></li>           
-            <li><a className="hover-2" href='/#sessions' onClick={() => scroll('projects')}>03. PROJECTS</a></li>           
-            <li><a className="hover-2" href='/#sessions' onClick={() => scroll('connect')}>04. CONNECT</a></li>           
+            <li><a className="hover-2" href='/#experience' onClick={() => scroll('experience')}>02. EXPERIENCE</a></li>           
+            <li><a className="hover-2" href='/#projects' onClick={() => scroll('projects')}>03. PROJECTS</a></li>           
+            <li><a className="hover-2" href='/#contact' onClick={() => scroll('contact')}>04. CONNECT</a></li>           
         </ul>
       </nav>
     </>

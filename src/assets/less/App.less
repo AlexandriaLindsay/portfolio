@@ -127,6 +127,7 @@
 
 .row {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .column {
@@ -683,7 +684,7 @@ html {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    border: 2px solid @pink;
+    border: 2px solid @blue;
     z-index: 9;
 
     &:hover {
@@ -1155,13 +1156,16 @@ button:focus {
     line-height: 1;
     text-decoration: none;
     display: block;
-    font-size: 18px;
+    font-size: 16px;
     width: 245px;
     font-weight: 900;
     color: @pink;
     font-family: @lato;
     margin-top: 54px;
     .center();
+    @media @min992 {
+      font-size: 18px;
+    }
   
     &:hover {
         background-color: @pink;
@@ -1229,7 +1233,12 @@ header {
     }
 
     img {
-        width: 100px;
+        width: 74px;
+        margin-top: 11px;
+        @media @min992 {
+          width: 100px;
+          margin-top: 0;
+        }
     }
 
 }
@@ -1288,6 +1297,10 @@ header {
         opacity: 0;
         animation: opacity 5s forwards;
         animation-delay: 3s;
+        display: none;
+        @media @min992 {
+          display: block;
+        }
     }
     .hero-content,
     .hero-img {
@@ -1301,7 +1314,10 @@ header {
     }
 
     .hero-content div p:last-of-type {
-        padding-right: 238px;
+        padding-right: 0px;
+        @media @min992 {
+          padding-right: 238px;
+        }
     }
 
     .hero-img {
@@ -1342,12 +1358,13 @@ header {
     }
 
     .hero-content {
-        width: 57%;
+        width: 100%;
         position: relative;
-        padding-top: 104px;
-        display: none;
+        padding-top: 41px;
+        display: inline-block;
         @media @min992 {
-            display: inline-block;
+          padding-top: 104px;
+          width: 57%;
         }
     }
 }
@@ -1398,6 +1415,10 @@ h2 {
   top: -81px;
   right: -85px;
   z-index: -5;
+  display: none;
+  @media @min992 {
+    display: block;
+  }
   .circle:first-of-type {
     background-color: #734888;
     width: 250px;
@@ -1432,8 +1453,15 @@ h2 {
   padding-bottom: 200px;
   margin-top: 140px;
 
+  img {
+    width: 100%;
+  }
+
   .column:first-of-type {
-    padding-right: 150px;
+    padding-right: 0px;
+    @media @min992 {
+      padding-right: 150px;
+    }
   }
 
   .box {
@@ -1446,7 +1474,9 @@ h2 {
 
 #experience {
   padding-bottom: 200px;
+  padding-top: 57px;
   height:auto;
+  position: relative;
   .psone-content, 
   .whitecard-content, 
   .chicken-chef-content {
@@ -1457,6 +1487,17 @@ h2 {
       opacity: 1;
       height: 200px;
       transition: height 0.5s, opacity 0.5s linear;
+    }
+  }
+
+  .circle-cluster {
+    right: unset;
+    left: -544px;
+    top: 110px;
+
+    .circle:first-of-type {
+      width: 290px;
+      height: 290px;
     }
   }
 
@@ -1495,6 +1536,7 @@ h2 {
 }
 
 #projects {
+  padding-top: 57px;
   .project {
     display: block;
     border: 5px solid @pink;
@@ -1504,6 +1546,9 @@ h2 {
     img {
       width: 52px;
       margin-bottom: 12px;
+    }
+    h3 {
+      margin-bottom: 11px;
     }
     &:hover {
       background-color: @pink;
@@ -1530,6 +1575,73 @@ h2 {
   }
 }
 
+
+#contact {
+  padding-top: 198px;
+  padding-bottom: 140px;
+  position: relative;
+  h2 {
+    margin-bottom: 23px;
+  }
+  .circle-cluster {
+    right: -374px;
+    top: 324px;
+    .circle:first-of-type {
+      width: 500px;
+      height: 500px;
+    }
+
+    .circle:nth-of-type(2) {
+      width: 60px;
+      height: 60px;
+      right: unset;
+      left: 209px;
+      bottom: -44px;
+    }
+
+    .circle:nth-child(3) {
+      width: 150px;
+      height: 150px;
+      right: 63px;
+      bottom: -20px;
+    }
+  }
+  & > p {
+    width: 600px;
+  }
+
+  .social {
+    img {
+      margin-right: 20px;
+    }
+  }
+
+  form {
+    margin-top: 50px;
+    p:first-of-type,
+    p:nth-of-type(2) {
+      display: inline-block;
+      width: 49%;
+    }
+
+    input,textarea {
+      color: @lightPink;
+      background-color: rgba(77,24,77,0.3);
+    }
+
+    input[type="submit"] {
+      float: right;
+      &:hover {
+        background-color: @pink;
+        color: @blue !important;
+      }
+    }
+
+    p:first-of-type {
+      margin-right: 19px;
+    }
+  }
+}
 /**********************************
 * FOOTER
 ***********************************/

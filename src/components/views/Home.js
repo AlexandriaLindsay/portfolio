@@ -9,6 +9,9 @@ import DoubleCol from '../layout/DoubleCol';
 import "animate.css"
 import Alex from '../../assets/images/alex-leaning-on-a-plane.jpg';
 import Folder from '../../assets/images/folder.svg';
+import GitHub from '../../assets/images/github.svg';
+import LinkedIn from '../../assets/images/linkedin.svg';
+import { ContactUs } from '../elements/ContactUs';
 
 
 document.title ="Alexandria Lindsay — Full-Stack Developer"; 
@@ -283,6 +286,7 @@ const Home = ({
                 </Section>
 
                 <Section id="experience" className="width-1000">
+                    <div className="circle-cluster"><div className="circle"></div><div className="circle"></div><div className="circle"></div></div>
                     <h2>02. EXPERIENCE<span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span></h2>
                     <div className="row">
                         <div className="column">
@@ -379,6 +383,21 @@ const Home = ({
                                 <button className="custom-btn">View</button>
                             </a>
                         </div>
+                    </div>
+                </Section>
+
+                <Section id="contact" className="width-1000">
+                    <div className="circle-cluster"><div className="circle"></div><div className="circle"></div><div className="circle"></div></div>
+                    <h2>04. CONNECT<span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fermentum  velit non massa mattis, a eleifend augue gravida. Ut lobortis diam a viverra  tempus. Fusce luctus tristique felis, vitae venenatis nisi aliquam a. tempus. Fusce  luctus tristique felis, vitae venenatis nisi aliquam a.</p>
+                    <ContactUs/>
+                    <div className="social">
+                        <a href="#" target="_blank">
+                            <img src={GitHub} alt="See Alex on GitHub" title="See Alex on GitHub" />
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src={LinkedIn} alt="See Alex on LinkedIn" title="See Alex on LinkedIn" />
+                        </a>
                     </div>
                 </Section>
             </LayoutDefault>
