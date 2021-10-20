@@ -704,7 +704,7 @@ html {
     height: 0; 
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
-    border-bottom: 11px solid @lightPink;
+    border-bottom: 11px solid transparent;
 
 }
 
@@ -714,8 +714,8 @@ html {
     margin: 30px auto;
     width: 12px;
     height: 12px;
-    border-top: 3px solid @pink;
-    border-left: 3px solid @pink;
+    border-top: 3px solid @blue;
+    border-left: 3px solid @blue;
     transform: rotate(225deg);
     transition: .3s;
     position: absolute;
@@ -1635,7 +1635,11 @@ h2 {
   }
 
   & > p {
+    width: 100%;
     margin-bottom: 56px;
+    @media @min768 {
+      width: 540px;
+    }
   }
   .project {
     display: block;
@@ -1644,10 +1648,21 @@ h2 {
     padding: 28px;
     margin-bottom: 30px;
     position: relative;
+    min-height: auto;
+
     @media @min768 {
       width: calc(100% - 1em);
+      min-height: 350px;
     }
     @media @min992 {
+      width: calc(100% - 2em);
+      min-height: 380px;
+    }
+    @media @min1200 {
+      width: calc(100% - 2em);
+      min-height: 498px;
+    }
+    @media @min1500 {
       width: calc(100% - 2em);
       min-height: 430px;
     }
@@ -1679,8 +1694,10 @@ h2 {
     button {
       padding: 9px 0;
       width: 130px;
-      position: absolute;
-      bottom: 28px;
+      @media @min768 {
+        position: absolute;
+        bottom: 28px;
+      }
     }
   }
 }

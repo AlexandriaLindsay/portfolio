@@ -329,14 +329,6 @@ const Home = ({
                     <p>I've chosen to list only a few projects as I've worked on over 100+ sites. Feel free to <a href="#contact">connect</a> with me if you want to hear about more work I've done!</p>
                     <div className="row">
                         <div className="column">
-                            <a className="project" href="https://hoghearth.com/mats-vs-lamps/#cal-sec" target="_blank" rel="noreferrer noopener">
-                                <img src={Folder} alt="Folder Icon" />
-                                <h3>Energy Savings Calculator</h3>
-                                <p>Developed a calucator that outputs the breakdown on annual crate and full barn energy savings.</p>
-                                <button className="custom-btn">View</button>
-                            </a>
-                        </div>
-                        <div className="column">
                             <a className="project" href="https://echo.staging.prufs.ca/" target="_blank" rel="noreferrer noopener">
                                 <img src={Folder} alt="Folder Icon" />
                                 <h3>Spartan Gym</h3>
@@ -360,6 +352,15 @@ const Home = ({
                                 <button className="custom-btn">View</button>
                             </a>
                         </div>
+
+                        <div className="column">
+                            <a className="project" href="https://hoghearth.com/mats-vs-lamps/#cal-sec" target="_blank" rel="noreferrer noopener">
+                                <img src={Folder} alt="Folder Icon" />
+                                <h3>Energy Savings Calculator</h3>
+                                <p>Developed a calucator that outputs the breakdown on annual crate and full barn energy savings. Technologies used were jQuery, HTML, and LESS</p>
+                                <button className="custom-btn">View</button>
+                            </a>
+                        </div>
                     </div>
                     
                     <div className="row">
@@ -367,7 +368,7 @@ const Home = ({
                         <a className="project" href="https://fortemicro.com/" target="_blank" rel="noreferrer noopener">
                                 <img src={Folder} alt="Folder Icon" />
                                 <h3>Forte Micro</h3>
-                                <p>This client loved our work so much that they reached out all the way from Florida! We built custom templates to give the client the ability new pages with ease.</p>
+                                <p>This client loved our work so much that they reached out all the way from Florida! We built custom templates to give the client the ability to add new pages with ease.</p>
                                 <button className="custom-btn">View</button>
                             </a>
                         </div>
@@ -391,7 +392,7 @@ const Home = ({
                             <a className="project" href="https://greattastesmb.ca/" target="_blank" rel="noreferrer noopener">
                                 <img src={Folder} alt="Folder Icon" />
                                 <h3>Great Tastes MB</h3>
-                                <p>Aside from developing the website, we imported over 500+ recipes from their old site to a new one.</p>
+                                <p>Aside from developing the website, we imported over 500+ recipes from their old site to a new one. Built as a custom Timber theme using TWIG as a templating engine for PHP.</p>
                                 <button className="custom-btn">View</button>
                             </a>
                         </div>
@@ -401,7 +402,7 @@ const Home = ({
                 <Section id="contact" className="width-1000">
                     <div className="circle-cluster"><div className="circle"></div><div className="circle"></div><div className="circle"></div></div>
                     <h2>04. CONNECT<span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span></h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fermentum  velit non massa mattis, a eleifend augue gravida. Ut lobortis diam a viverra  tempus. Fusce luctus tristique felis, vitae venenatis nisi aliquam a. tempus. Fusce  luctus tristique felis, vitae venenatis nisi aliquam a.</p>
+                    <p>If you are interested in other projects I've worked on, have any questions or simply just want to say hi, my inbox is always open!</p>
                     <ContactUs/>
                     <div className="social">
                         <a href="https://github.com/AlexandriaLindsay?tab=repositories" target="_blank">
