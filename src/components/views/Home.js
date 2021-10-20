@@ -275,8 +275,8 @@ const Home = ({
                     <div className="row">
                         <div className="column">
                             <h2 className="desktop">01. ABOUT<span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span></h2>
-                            <p>Hi there! My name is Alexandria and I have a strong passion for creating things that live on the web. My interest in web development started back in 2013 when I found a free course online that was teaching html and css for free. Once I created my first project I was so amazed that I could see my vision come to life. In that moment I knew it was a passion of mine to make people's visions come to life.</p>
-                            <p>A few years later I began to dabble in video game development, app development, etc. Only to discover that I specifically wanted to pursue web development. Fast forward to today, and I've had the privilege to work at an amazing marketing company where I'm currently a lead developer. My main focus most days is building high-end websites and experiences, learning new technologies, and discovering ways to improve our sites, devlopment efficiency &amp; productivity, and the overall web process.</p>
+                            <p>Hi there! My name is Alexandria and I have a strong passion for creating things that live on the web. My interest in web development started back in 2013 when I found a free course online that was teaching HTML and CSS for free. Once I created my first project I was so amazed that I could see my vision come to life. In that moment I knew it was a passion of mine to make other people's visions come to life.</p>
+                            <p>A few years later I began to dabble in game development, app development, etc. Only to discover that my true passion lies in web. Fast forward to today, and I've had the privilege to work at an <a href="https://psone.ca" target="_blank" rel="noopener noreferrer">amazing marketing company</a> where I'm currently a lead developer. My main focus most days is building high-end web experiences, learning new technologies, devlopment efficiency &amp; productivity, and our overall web process.</p>
                             <p>I also have a strong desire to learn new languages and methods that can improve my work. Here are a few I've been working with recently.</p>
                             <ul>
                                 <li>React</li>
@@ -303,13 +303,13 @@ const Home = ({
                         <div className="column">
                             <button id="psone" onClick={togglePsoneClass}><h3>Print Studio One</h3><p>Steinbach, MB</p></button>
                             <div className="psone-content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fermentum velit non massa mattis, a eleifend augue gravida. Ut lobortis diam a viverra tempus. Fusce luctus tristique felis, vitae venenatis nisi aliquam a.</p>
+                                <p>I develop high-quality websites from front-end to back-end. Maintain and update over 200+ sites. Manage DNS records (launching sites and creating email accounts). Managing our GitHub organization and repositories to ensure code is up to standards. Work heavily with Designers and Project Managers. Provide insight to team members when facing challenging projects. Research & implement new SEO strategies for new Google algorithms. Created Google analytics reports and tag manager accounts for all sites. I also had the honour to interview and test multiple candidates for a Junior Web Developer position.</p>
                             </div>
                         </div>
                         <div className="column">
                             <button id="whitecard" onClick={toggleWhiteCardClass}><h3>Project White Card</h3><p>Winnipeg, MB</p></button>
                             <div className="whitecard-content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fermentum velit non massa mattis, a eleifend augue gravida. Ut lobortis diam a viverra tempus. Fusce luctus tristique felis, vitae venenatis nisi aliquam a.</p>
+                                <p>I interned at Project WhiteCard on two occasions. One was for video game development where the majority of my time was spent being mentoured from others and bug testing applications. The second, was right after I graduated from school and I had a great opportunity to learn real world experiences, write proposols, and by the end I had designed and developed a site there.</p>
                             </div>
                         </div>
                     </div>
@@ -318,7 +318,7 @@ const Home = ({
                     <div className="column">
                             <button id="chicken-chef" onClick={toggleChickenChefClass}><h3>Chicken Chef</h3><p>Lorette, MB</p></button>
                             <div className="chicken-chef-content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fermentum velit non massa mattis, a eleifend augue gravida. Ut lobortis diam a viverra tempus. Fusce luctus tristique felis, vitae venenatis nisi aliquam a.</p>
+                                <p>So before I kickstarted my career into web, I actually use to be a waitress and I am ever so grateful that my boss gave me the opportunity to work on a website for the company. This was <a href="https://chickencheflorette.ca/" target="_blank" rel="noopener noreferrer">my very first site</a> I built in the real world as a freelancer. It's fun to look back at this and think about how far I've come.</p>
                             </div>
                         </div>
                     </div>
@@ -329,26 +329,26 @@ const Home = ({
                     <p>I've chosen to list only a few projects as I've worked on over 100+ sites. Feel free to <a href="#contact">connect</a> with me if you want to hear about more work I've done!</p>
                     <div className="row">
                         <div className="column">
-                            <a className="project" href="https://lexiesloosetea.ca/" target="_blank" rel="noreferrer noopener">
+                            <a className="project" href="https://hoghearth.com/mats-vs-lamps/#cal-sec" target="_blank" rel="noreferrer noopener">
                                 <img src={Folder} alt="Folder Icon" />
-                                <h3>Lexie's Loose Tea</h3>
-                                <p>This project was to kickstart my very own tea business! Designed and developed a custom theme integrated with woocommerce.</p>
+                                <h3>Energy Savings Calculator</h3>
+                                <p>Developed a calucator that outputs the breakdown on annual crate and full barn energy savings.</p>
                                 <button className="custom-btn">View</button>
                             </a>
                         </div>
                         <div className="column">
                             <a className="project" href="https://echo.staging.prufs.ca/" target="_blank" rel="noreferrer noopener">
                                 <img src={Folder} alt="Folder Icon" />
-                                <h3>Spartan Gym &amp; Traing</h3>
-                                <p>This was a side project I designed and built. Using React as the front-end and WordPress as a headless CMS. Paried with the Apollo Client and GraphQL API to query data.</p>
+                                <h3>Spartan Gym</h3>
+                                <p>This is a side project I designed and built for fun! Using React as the front-end and WordPress as a headless CMS. Paried with the Apollo Client and GraphQL API to query data.</p>
                                 <button className="custom-btn">View</button>
                             </a>
                         </div>
                         <div className="column">
                             <a className="project" href="https://prairiesurfaces.ca/court-designer/" target="_blank" rel="noreferrer noopener">
                                 <img src={Folder} alt="Folder Icon" />
-                                <h3>Praire Surfaces - Court Builder</h3>
-                                <p>Developed website and a court builder interface that allows the user to create their court and submit the creation through the form. Use PHP to pass relavant data between pages.</p>
+                                <h3>Court Builder Interface</h3>
+                                <p>Developed website and a court builder interface that allows the user to create a custom court and submit the creation through the form. Used PHP to pass relavant data between pages.</p>
                                 <button className="custom-btn">View</button>
                             </a>
                         </div>
@@ -356,7 +356,7 @@ const Home = ({
                             <a className="project" href="https://psone.ca" target="_blank" rel="noreferrer noopener">
                                 <img src={Folder} alt="Folder Icon" />
                                 <h3>Print Studio One</h3>
-                                <p>About a year in working for PSOne, they wanted to refresh their site. This was a big project and I'm happy I got to take lead on the project!</p>
+                                <p>About a year in working for PSOne, they wanted to refresh their site. This was a big project and I'm honoured to be the developer that took lead on this!</p>
                                 <button className="custom-btn">View</button>
                             </a>
                         </div>
@@ -367,23 +367,23 @@ const Home = ({
                         <a className="project" href="https://fortemicro.com/" target="_blank" rel="noreferrer noopener">
                                 <img src={Folder} alt="Folder Icon" />
                                 <h3>Forte Micro</h3>
-                                <p>This client loved our work so much that they reached out all the way from Florida! We built custom templates to allow ability to add sections to there pages.</p>
+                                <p>This client loved our work so much that they reached out all the way from Florida! We built custom templates to give the client the ability new pages with ease.</p>
                                 <button className="custom-btn">View</button>
                             </a>
                         </div>
                         <div className="column">
                         <a className="project" href="https://heatmasterss.com/price-your-furnace-new/" target="_blank" rel="noreferrer noopener">
                                 <img src={Folder} alt="Folder Icon" />
-                                <h3>Heatmastersss - Price Your Furnace Form Refresh</h3>
-                                <p>While I didn't develop this site I had the great opportunity to build this awesome ajax/PHP form that contains a heafty amount of conditional logic to determine witch furnaces get display, in which order.</p>
+                                <h3>Custom AJAX / PHP Form</h3>
+                                <p>While I didn't develop this site I had a great opportunity to build this awesome AJAX/PHP form that contains a heafty amount of conditional logic to determine witch furnaces get display, in which order.</p>
                                 <button className="custom-btn">View</button>
                             </a>
                         </div>
                         <div className="column">
                             <a className="project" href="https://goldkey21.com/" target="_blank" rel="noreferrer noopener">
                                 <img src={Folder} alt="Folder Icon" />
-                                <h3>Century 21</h3>
-                                <p>With the aid of RealtyPress we developed this site while creating cron jobs to instruct the server to pull from the MLS feed every hour.</p>
+                                <h3>CREA Data / MLS Feed</h3>
+                                <p>With the aid of RealtyPress we developed this site while creating cron jobs to instruct the server to pull listings every hour.</p>
                                 <button className="custom-btn">View</button>
                             </a>
                         </div>
@@ -391,7 +391,7 @@ const Home = ({
                             <a className="project" href="https://greattastesmb.ca/" target="_blank" rel="noreferrer noopener">
                                 <img src={Folder} alt="Folder Icon" />
                                 <h3>Great Tastes MB</h3>
-                                <p>Aside from developing the website, we imported over 500+ recipes from their old site to their new one.</p>
+                                <p>Aside from developing the website, we imported over 500+ recipes from their old site to a new one.</p>
                                 <button className="custom-btn">View</button>
                             </a>
                         </div>
@@ -404,11 +404,8 @@ const Home = ({
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fermentum  velit non massa mattis, a eleifend augue gravida. Ut lobortis diam a viverra  tempus. Fusce luctus tristique felis, vitae venenatis nisi aliquam a. tempus. Fusce  luctus tristique felis, vitae venenatis nisi aliquam a.</p>
                     <ContactUs/>
                     <div className="social">
-                        <a href="#" target="_blank">
+                        <a href="https://github.com/AlexandriaLindsay?tab=repositories" target="_blank">
                             <img src={GitHub} alt="See Alex on GitHub" title="See Alex on GitHub" />
-                        </a>
-                        <a href="#" target="_blank">
-                            <img src={LinkedIn} alt="See Alex on LinkedIn" title="See Alex on LinkedIn" />
                         </a>
                     </div>
                 </Section>

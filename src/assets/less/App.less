@@ -1562,7 +1562,7 @@ h2 {
     opacity: 0;
     &.active {
       opacity: 1;
-      height: 200px;
+      height:263px;
       transition: height 0.5s, opacity 0.5s linear;
     }
   }
@@ -1630,17 +1630,26 @@ h2 {
       width: 200px;
     }
   }
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  & > p {
+    margin-bottom: 56px;
+  }
   .project {
     display: block;
     border: 5px solid @pink;
     width: calc(100% - 0em);
     padding: 28px;
     margin-bottom: 30px;
+    position: relative;
     @media @min768 {
       width: calc(100% - 1em);
     }
     @media @min992 {
       width: calc(100% - 2em);
+      min-height: 430px;
     }
     img {
       width: 52px;
@@ -1670,6 +1679,8 @@ h2 {
     button {
       padding: 9px 0;
       width: 130px;
+      position: absolute;
+      bottom: 28px;
     }
   }
 }
