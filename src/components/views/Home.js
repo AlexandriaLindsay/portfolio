@@ -382,7 +382,7 @@ const Home = ({
                             </a>
                         </div>
                         <div className="column">
-                            <a className="project" href="https://goldkey21.com/" target="_blank" rel="noreferrer noopener">
+                            <a className="project" href="https://steinbachrealty.com/listings/" target="_blank" rel="noreferrer noopener">
                                 <img src={Folder} alt="Folder Icon" />
                                 <h3>CREA Data / MLS Feed</h3>
                                 <p>With the aid of RealtyPress we developed this site while creating cron jobs to instruct the server to pull listings every hour.</p>
