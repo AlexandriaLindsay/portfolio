@@ -68,6 +68,7 @@ const Home = ({
      
     return (
         <>
+            <a className="skip-link screen-reader-text" href="#content">Skip to Content</a>
             <LayoutDefault>
                 <Section className="width-1500 hero">
                     <div className="hero-content">
@@ -303,7 +304,7 @@ const Home = ({
                         <div className="column">
                             <button id="psone" onClick={togglePsoneClass}><h3>Print Studio One</h3><p>Steinbach, MB</p></button>
                             <div className="psone-content">
-                                <p>I develop high-quality websites from front-end to back-end. Maintain and update over 200+ sites. Manage DNS records (launching sites and creating email accounts). Managing our GitHub organization and repositories to ensure code is up to standards. Work heavily with Designers and Project Managers. Provide insight to team members when facing challenging projects. Research & implement new SEO strategies for new Google algorithms. Created Google analytics reports and tag manager accounts for all sites. I also had the honour to interview and test multiple candidates for a Junior Web Developer position.</p>
+                                <p>I develop high-quality websites from front-end to back-end. Maintain and update over 200+ sites. Manage DNS records (launching sites and creating email accounts). Manage our GitHub organization and repositories to ensure code is up to standards. Work heavily with Designers and Project Managers. Provide insight to team members when facing challenging projects. Research &amp; implement new SEO strategies for new Google algorithms. Created Google analytics reports and tag manager accounts for all sites. I also interviewed and tested multiple candidates for a Junior Web Developer position.</p>
                             </div>
                         </div>
                         <div className="column">

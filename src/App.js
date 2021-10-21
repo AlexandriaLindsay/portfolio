@@ -1,7 +1,7 @@
 import { hot } from 'react-hot-loader/root';
 import React from 'react';
 import Header from './components/layout/partials/Header';
-import { BrowserRouter, Route } from 'react-router-dom'
+import { BrowserRouter, Route, Redirect } from 'react-router-dom'
 import './assets/css/App.css';
 import Home from './components/views/Home.js';
 import MenuModal from './components/elements/MenuModal';
@@ -21,6 +21,7 @@ function App() {
         <ScrollToTop/>
         {/* CONTENT */}
         <Route exact path='/' component={Home}/>
+        <Redirect to='/' />
         {/* FOOTER */}
         <Footer />
         {/* MODAL MENU */}
