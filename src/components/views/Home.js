@@ -277,7 +277,7 @@ const Home = ({
                         <div className="column">
                             <h2 className="desktop">01. ABOUT<span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span><span className="circle"></span></h2>
                             <p>Hi there! My name is Alexandria and I have a strong passion for creating things that live on the web. My interest in web development started back in 2013 when I found a free course online that was teaching HTML and CSS for free. Once I created my first project I was so amazed that I could see my vision come to life. In that moment I knew it was a passion of mine to make other people's visions come to life.</p>
-                            <p>A few years later I began to dabble in game development, app development, etc. Only to discover that my true passion lies in web. Fast forward to today, and I've had the privilege to work at an <a href="https://psone.ca" target="_blank" rel="noopener noreferrer">amazing marketing company</a> where I'm currently a lead developer. My main focus most days is building high-end web experiences, learning new technologies, devlopment efficiency &amp; productivity, and our overall web process.</p>
+                            <p>A few years later I began to dabble in game development, app development, etc. Only to discover that my true passion lies in web. Fast forward to today, and I've had the privilege to work at an <a href="https://psone.ca" target="_blank" rel="noopener noreferrer">amazing marketing company</a> where I'm currently a Full-Stack Developer and a mentor. My main focus most days is building high-end web experiences, learning new technologies, devlopment efficiency &amp; productivity, and our overall web process.</p>
                             <p>I also have a strong desire to learn new languages and methods that can improve my work. Here are a few I've been working with recently.</p>
                             <ul>
                                 <li>React</li>
@@ -355,10 +355,10 @@ const Home = ({
                         </div>
 
                         <div className="column">
-                            <a className="project" href="https://hoghearth.com/mats-vs-lamps/#cal-sec" target="_blank" rel="noreferrer noopener">
+                            <a className="project" href="https://diamondconstruction.ca/construction-products/#calculator" target="_blank" rel="noreferrer noopener">
                                 <img src={Folder} alt="Folder Icon" />
-                                <h3>Energy Savings Calculator</h3>
-                                <p>Developed a calucator that outputs the breakdown on annual crate and full barn energy savings. Technologies used were jQuery, HTML, and LESS</p>
+                                <h3>Volume Calculator</h3>
+                                <p>Developed a volume calculator to calculate how many cubic yard of gravel you'll need to complete a project. Technologies used were jQuery, HTML, and LESS</p>
                                 <button className="custom-btn">View</button>
                             </a>
                         </div>
