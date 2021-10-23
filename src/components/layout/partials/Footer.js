@@ -28,7 +28,7 @@ const Footer = ({
                 id='footer'
             >
                 <div className="width-1500 center">
-                    <span style={{ paddingBottom: '20px' }}>Design &amp; Developed by<br/>Alexandria Lindsay</span>
+                    <span style={{ paddingBottom: '20px' }}>Designed &amp; Developed by<br/>Alexandria Lindsay</span>
                 </div>
             </footer>
             <div className={isActive ? 'button_container active' : 'button_container'} onClick={toggleClass}>
